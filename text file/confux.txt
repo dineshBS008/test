@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+     <title> PHP arrays </title>
+  </head>
+  
+  <body>
+    <?php   
+      $student[0] = "Krishna";
+      $student[1] = "Rakesh";
+      $student[] = "Suresh";
+      //$student[5] = "Haresh";
+    
+
+      echo $student[0] . "<br>\n\t";
+      echo $student[1] . "<br>\n\t";
+      echo $student[2] . "<br>\n";
+      //echo $student[5] . "<br>\n";
+      
+    
+      // using traditinal :: for loop
+      echo "\t<h1>Using traditional for loop</h1>\n\t"; 
+      for($i=0; $i<sizeof($student); $i++)      //first case 0<0 true????
+      {
+        echo $student[$i] . "<br>\n\t";
+      }
+      echo "<br>";
+
+      $a=0;
+      $b=0;
+      if($a<$b)
+      {
+        echo "true";
+      }
+      else
+      {
+        echo "false";
+      }
+    
+      //associative array
+    
+    // also try:
+    // rsort(), arsort(), krsort()
+    ?>
+  </body>
+</html>
+
+////////////////////////////////////////////////////////
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+     <title> PHP arrays </title>
+  </head>
+  
+  <body>
+    <?php   
+     
+      //associative array
+    
+     
+    
+      $mystuff = array("KTM bike", "Hoda CIVIC", "A nice bungolow at Dhapakhel", "a son", 17, true);    //sizeof($mystuff)=6 its not indexed?
+    
+      echo "<h1>My stuff</h1>\n";
+      for($i=0; $i<sizeof($mystuff); $i++)
+      {
+        echo $mystuff[$i]. "<br>\n";
+      }
+    
+    ?>
+  </body>
+</html>
